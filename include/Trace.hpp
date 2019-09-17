@@ -1,5 +1,8 @@
 #pragma once
 
+namespace lazyant
+{
+
 class Trace
 {
 public:
@@ -7,3 +10,5 @@ public:
 
     ~Trace() = default;
 };
+
+}

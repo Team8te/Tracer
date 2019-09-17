@@ -1,6 +1,11 @@
 #pragma once
 
-class ITracer
+#include "export.hpp"
+
+namespace lazyant
+{
+
+class LAZYANT_API ITracer
 {
 public:
     virtual ~ITracer() = default;
@@ -11,3 +16,5 @@ public:
 
     virtual void Clear() = 0;
 };
+
+}

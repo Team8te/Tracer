@@ -1,16 +1,15 @@
 cmake_minimum_required(VERSION 3.10)
 
-set (CMAKE_CXX_STANDARD 17)
+project(lazyant)
 
-option(TRACER_BUILD_TESTS OFF)
+set(CMAKE_CXX_STANDARD 17)
+set(LAZYANT_SOURCE_ROOT ${CMAKE_CURRENT_SOURCE_DIR})
 
-project(Tracer)
+option(LAZYANT_BUILD_TESTS ON)
 
-set(SOURCE)
+add_subdirectory(src)
 
-if(TRACER_BUILD_TESTS)
+if(LAZYANT_BUILD_TESTS)
     find_package(GTest REQUIRED)
     add_subdirectory(tests)
 endif()
-
-add_executable(${PROJECT_NAME} ${SOURCE})

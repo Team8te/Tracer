@@ -2,10 +2,15 @@
 
 #include "Trace.hpp"
 
-class IStream
+namespace lazyant
+{
+
+class IOutStream
 {
 public:
-    virtual ~IStream() = default;
+    virtual ~IOutStream() = default;
 
     virtual void operator<< (Trace &trace) const = 0;
 };
+
+}
