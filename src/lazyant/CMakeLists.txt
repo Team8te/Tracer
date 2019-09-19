@@ -2,11 +2,13 @@ cmake_minimum_required(VERSION 3.10)
 
 include_directories(${LAZYANT_SOURCE_ROOT}/include)
 
-set(SOURCES BaseTracer.cpp)
+set(SOURCES ImplOutStream.cpp
+            ImplTracer.cpp)
 
 set(PRIVATE_INCLUDES)
 
-add_library(lazyant_core SHARED  BaseTracer.cpp)
+add_library(lazyant_core SHARED  ${SOURCES})
+
 if (LAZYANT_EXPORT)
-    target_compile_definitions(lazyant_core PRIVATE LAZYANT_EXPORT) 
+    target_compile_definitions(lazyant_core PRIVATE LAZYANT_EXPORT)
 endif()

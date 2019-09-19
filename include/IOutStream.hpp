@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Trace.hpp"
+#include "ITrace.hpp"
 
 namespace lazyant
 {
@@ -10,7 +10,7 @@ class IOutStream
 public:
     virtual ~IOutStream() = default;
 
-    virtual void operator<< (Trace &trace) const = 0;
+    virtual IOutStream& operator<< (const ITrace &trace) = 0;
 };
 
 }
