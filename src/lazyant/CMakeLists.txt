@@ -3,7 +3,9 @@ cmake_minimum_required(VERSION 3.10)
 include_directories(${LAZYANT_SOURCE_ROOT}/include)
 
 set(SOURCES ImplOutStream.cpp
-            ImplTracer.cpp)
+            ImplTracer.cpp
+            ITracer.cpp
+            TraceString.cpp)
 
 set(PRIVATE_INCLUDES)
 

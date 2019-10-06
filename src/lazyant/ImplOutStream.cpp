@@ -12,13 +12,8 @@ ImplOutStream::ImplOutStream(const std::string &filePath)
 {
 }
 
-IOutStream& ImplOutStream::operator<< (const ITrace &trace) const
+IOutStream& ImplOutStream::operator<< (const ITrace &trace)
 {
-    std::ofstream fStream;
-    fStream.open(_filePath);
-
-    fStream << trace.to_string() << std::endl;
-
     return *this;
 }
 

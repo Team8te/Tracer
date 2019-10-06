@@ -16,7 +16,7 @@ class ImplTracer : public ITracer
 public:
     explicit ImplTracer(std::unique_ptr<IOutStream> _ostream);
 
-    void AddTrace(const ITrace& trace) override;
+    void AddTrace(std::unique_ptr<ITrace> trace) override;
 
     void Commit() const override;
 

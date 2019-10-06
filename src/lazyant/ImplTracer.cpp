@@ -10,9 +10,9 @@ ImplTracer::ImplTracer(std::unique_ptr<IOutStream> ostream)
 {
 }
 
-void ImplTracer::AddTrace(const ITrace& trace)
+void ImplTracer::AddTrace(std::unique_ptr<ITrace> trace)
 {
-    _history.push_back(std::make_unique<ITrace>(trace));
+    _history.push_back(std::move(trace));
 }
 
 void ImplTracer::Clear()

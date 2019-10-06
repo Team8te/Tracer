@@ -1,5 +1,6 @@
 #include <gtest/gtest.h>
 
+#include <ITracer.hpp>
 
 TEST(mytest, test1)
 {

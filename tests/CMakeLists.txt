@@ -9,6 +9,7 @@ add_executable(${PROJECT_NAME}_test main.cpp
                                     $<TARGET_OBJECTS:lazyant_core_test>)
 
 target_link_libraries(${PROJECT_NAME}_test PRIVATE  gtest
-                                                    gtest_main)
+                                                    gtest_main
+                                                    lazyant_core)
 
 gtest_discover_tests(${PROJECT_NAME}_test)
