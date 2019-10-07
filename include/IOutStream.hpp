@@ -1,11 +1,13 @@
 #pragma once
 
+#include <export.hpp>
+
 #include "ITrace.hpp"
 
 namespace lazyant
 {
 
-class IOutStream
+class LAZYANT_API IOutStream
 {
 public:
     virtual ~IOutStream() = default;

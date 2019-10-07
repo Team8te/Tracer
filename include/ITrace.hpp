@@ -1,11 +1,13 @@
 #pragma once
 
+#include <export.hpp>
+
 #include <string>
 
 namespace lazyant
 {
 
-class ITrace
+class LAZYANT_API ITrace
 {
 public:
     virtual ~ITrace() = default;
