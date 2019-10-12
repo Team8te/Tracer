@@ -1,7 +1,8 @@
 #pragma once
 
 #include "export.hpp"
-#include <IOutStream.hpp>
+
+#include "IOutStream.hpp"
 #include "ITrace.hpp"
 
 #include <memory>
@@ -21,6 +22,6 @@ public:
     virtual void Clear() = 0;
 };
 
-std::unique_ptr<ITracer> make_tracer(std::unique_ptr<IOutStream> stream);
+std::unique_ptr<ITracer> LAZYANT_API make_tracer(std::unique_ptr<IOutStream> stream);
 
 }

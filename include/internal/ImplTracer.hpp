@@ -1,6 +1,7 @@
 #pragma once
 
 #include "ITracer.hpp"
+
 #include "IOutStream.hpp"
 
 #include <list>

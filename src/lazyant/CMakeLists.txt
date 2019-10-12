@@ -18,5 +18,5 @@ add_library(lazyant_core SHARED  ${SOURCES}
                                  ${INCLUDES})
 
 if (LAZYANT_EXPORT)
-    target_compile_definitions(lazyant_core PRIVARE LAZYANT_EXPORT)
+    target_compile_definitions(lazyant_core PUBLIC LAZYANT_EXPORT)
 endif()

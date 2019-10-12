@@ -7,7 +7,7 @@
 namespace lazyant
 {
 
-std::unique_ptr<ITracer> make_tracer(std::unique_ptr<IOutStream> stream)
+std::unique_ptr<ITracer> LAZYANT_API make_tracer(std::unique_ptr<IOutStream> stream)
 {
     return std::make_unique<internal::ImplTracer>(std::move(stream));
 }
