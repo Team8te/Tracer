@@ -9,6 +9,8 @@
 
 namespace lazyant
 {
+namespace core
+{
 
 class LAZYANT_API ITracer
 {
@@ -24,4 +26,5 @@ public:
 
 std::unique_ptr<ITracer> LAZYANT_API make_tracer(std::unique_ptr<IOutStream> stream);
 
+}
 }

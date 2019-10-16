@@ -1,11 +1,14 @@
-#pragma once 
+#pragma once
 
-#include "ITrace.hpp"
+#include "lazyant_core/ITrace.hpp"
 
 namespace lazyant
 {
+namespace core
+{
 namespace internal
 {
+
 class TraceString : public ITrace
 {
 public:
@@ -15,5 +18,7 @@ public:
 
     std::string to_string() const override;
 };
+
+}
 }
 }

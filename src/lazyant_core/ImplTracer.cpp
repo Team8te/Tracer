@@ -1,6 +1,8 @@
-#include "internal/ImplTracer.hpp"
+#include "lazyant_core/internal/ImplTracer.hpp"
 
 namespace lazyant
+{
+namespace core
 {
 namespace internal
 {
@@ -27,5 +29,6 @@ void ImplTracer::Commit() const
     }
 }
 
+}
 }
 }

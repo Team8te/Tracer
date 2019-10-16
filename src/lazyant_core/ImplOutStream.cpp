@@ -1,8 +1,10 @@
-#include "internal/ImplOutStream.hpp"
+#include "lazyant_core/internal/ImplOutStream.hpp"
 
 #include <fstream>
 
 namespace lazyant
+{
+namespace core
 {
 namespace internal
 {
@@ -17,5 +19,6 @@ IOutStream& ImplOutStream::operator<< (const ITrace& trace)
     return *this;
 }
 
+}
 }
 }

@@ -6,6 +6,8 @@
 
 namespace lazyant
 {
+namespace core
+{
 
 class LAZYANT_API IOutStream
 {
@@ -15,4 +17,5 @@ public:
     virtual IOutStream& operator<< (const ITrace& trace) = 0;
 };
 
+}
 }

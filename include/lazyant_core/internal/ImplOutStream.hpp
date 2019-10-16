@@ -1,10 +1,12 @@
 #pragma once
 
-#include "IOutStream.hpp"
+#include "lazyant_core/IOutStream.hpp"
 
 #include <string>
 
 namespace lazyant
+{
+namespace core
 {
 namespace internal
 {
@@ -20,5 +22,6 @@ private:
     std::string _filePath;
 };
 
+}
 }
 }

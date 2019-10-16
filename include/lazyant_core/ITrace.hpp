@@ -6,6 +6,8 @@
 
 namespace lazyant
 {
+namespace core
+{
 
 class LAZYANT_API ITrace
 {
@@ -15,4 +17,5 @@ public:
     virtual std::string to_string() const = 0;
 };
 
+}
 }

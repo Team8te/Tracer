@@ -1,13 +1,15 @@
 #pragma once
 
-#include "ITracer.hpp"
+#include "lazyant_core/ITracer.hpp"
 
-#include "IOutStream.hpp"
+#include "lazyant_core/IOutStream.hpp"
 
 #include <list>
 #include <memory>
 
 namespace lazyant
+{
+namespace core
 {
 namespace internal
 {
@@ -28,5 +30,6 @@ private:
     std::list<std::unique_ptr<ITrace>> _history;
 };
 
+}
 }
 }
